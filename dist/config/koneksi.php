@@ -3,7 +3,7 @@
 $host = 'localhost';
 $user = 'root';
 $pass = '';
-$db = 'db_sorobayan';
+$db = 'db_subditindhan';
 
 $koneksi = mysqli_connect($host, $user, $pass, $db) or die('error');
 

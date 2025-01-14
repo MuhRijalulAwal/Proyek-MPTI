@@ -11,67 +11,45 @@
             border-bottom: 1px solid #ccc;
             margin: 10px 0;
         }
+
+        .sb-sidenav {
+            box-shadow: 10px 0 8px rgba(0, 0, 0, 0.2);
+            /* Shadow di sisi kanan */
+            /* background-color: #343a40; Latar belakang sidebar */
+            /* color: white; Warna teks */
+            height: 100vh;
+            /* Pastikan sidebar memenuhi tinggi layar */
+            overflow-y: auto;
+            /* Scroll jika konten lebih panjang */
+        }
     </style>
 </head>
 
 <body>
+
     <div id="layoutSidenav_nav">
-        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+        <nav class="sb-sidenav accordion" id="sidenavAccordion">
             <div class="sb-sidenav-menu">
                 <div class="nav">
-                    <a class="nav-link" href="index.php">
+                    <!-- Dashboard -->
+                    <a class="nav-link text-dark" href="index.php">
                         <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
-                        Dashboard
+                        Beranda
                     </a>
-                    <a class="nav-link collapsed" href="penyimpanan.php">
-                        <div class="sb-nav-link-icon"><i class="bi bi-archive"></i></div>
-                        Penyimpanan
-                    </a>
-
-                    <a class="nav-link collapsed" href="laporan.php">
+                    <!-- Laporan -->
+                    <a class="nav-link text-dark" href="../user/userLaporan.php">
                         <div class="sb-nav-link-icon"><i class="bi bi-graph-up"></i></div>
                         Laporan
                     </a>
-
-                    <a class="nav-link" href="charts.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-sliders2"></i></div>
-                        Konfigurasi
-                    </a>
-                    <div class="line-separate"></div>
-                    <a class="nav-link" href="charts.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-people-fill"></i></div>
-                        Kontak
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-bell"></i></div>
-                        Notifikasi
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-chat-left-dots"></i></div>
-                        Chat
-                    </a>
-                    <div class="line-separate"></div>
-                    <a class="nav-link" href="charts.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-gear"></i></div>
-                        Setelan
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-command"></i></div>
-                        Prediksi
-                    </a>
-                    <a class="nav-link" href="tables.html">
-                        <div class="sb-nav-link-icon"><i class="bi bi-question-square"></i></div>
-                        Bantuan
-                    </a>
-
                 </div>
             </div>
             <div class="sb-sidenav-footer">
-                <div class="large">Sorobayan Farma</div>
-                <div style="font-size: smaller;">Sorobayan Farma, Sanden, Bantul</div>
+                <div class="large">Ditjen Pothan Indhan</div>
+                <div style="font-size: smaller;">Jakarta Pusat, DKI Jakarta</div>
             </div>
         </nav>
     </div>
+
 </body>
 
 </html>
